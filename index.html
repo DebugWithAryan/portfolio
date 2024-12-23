@@ -19,6 +19,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#technologies">Technologies</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         
@@ -122,6 +123,129 @@
             </div>
         </div>
     </section>
+
+    <section id="technologies" class="technologies">
+        <h2 class="section-title">Technologies</h2>
+        <div class="grid">
+            <div class="grid-card">
+                <i class="fa-solid fa-code"></i>
+                <span>Programming Languages</span>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="assets/images/c.png" alt="C Logo" class="tech-logo">
+                        <p>C</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/cpp.png" alt="C++ Logo" class="tech-logo">
+                        <p>C++</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/java.png" alt="Java Logo" class="tech-logo">
+                        <p>Java</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/kotlin.png" alt="Kotlin Logo" class="tech-logo">
+                        <p>Kotlin</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/python.png" alt="Python Logo" class="tech-logo">
+                        <p>Python</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-card">
+                <i class="fa-solid fa-toolbox"></i>
+                <span>Frameworks & Tools</span>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="assets/images/androidstudio.png" alt="Android Studio Logo" class="tech-logo">
+                        <p>Android Studio</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/git.png" alt="Git Logo" class="tech-logo">
+                        <p>Git</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/arduinoo.png" alt="Arduino Logo" class="tech-logo">
+                        <p>Arduino IDE</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-card">
+                <i class="fa-solid fa-database"></i>
+                <span>Database</span>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="assets/images/mysql.png" alt="MySQL Logo" class="tech-logo">
+                        <p>MySQL</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/firebase.png" alt="Firebase" class="tech-logo">
+                        <p>Firebase</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="grid-card">
+                <i class="fa-solid fa-globe"></i>
+                <span>Web Technologies</span>
+                <div class="tech-icons">
+                    <div class="tech-item">
+                        <img src="assets/images/html.png" alt="HTML5 Logo" class="tech-logo">
+                        <p>HTML</p>
+                    </div>
+                    <div class="tech-item">
+                        <img src="assets/images/css.png" alt="CSS3 Logo" class="tech-logo">
+                        <p>CSS</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <style>
+            .technologies {
+                background: radial-gradient(circle at center, rgba(96, 165, 250, 0.1), transparent);
+            }
+            
+            .tech-icons {
+                display: flex;
+                gap: 1.5rem;
+                margin-top: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .tech-item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0.5rem;
+            }
+            
+            .tech-logo {
+                width: 40px;
+                height: 40px;
+                transition: 0.3s ease;
+                object-fit: contain;
+            }
+            
+            .tech-item:hover .tech-logo {
+                transform: scale(1.2);
+            }
+            
+            .tech-item p {
+                font-size: 0.9rem;
+                color: rgba(255, 255, 255, 0.8);
+            }
+    
+            .grid-card:hover .tech-logo {
+                filter: brightness(1.2);
+            }
+        </style>
+    </section>
+
 
     <section id="projects" class="projects">
         <h2 class="section-title">Recent Projects</h2>
