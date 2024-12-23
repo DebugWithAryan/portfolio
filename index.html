@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,
+    initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Aryan Jaiswal</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        
+        </ul>
+        
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <button class="visit-btn" onclick="window.open('https://github.com/DebugWithAryan', '_blank')">Visit Github</button>
+        
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <img src="MyPhoto.jpg" alt="">
+            <div class="info-box">
+                <div class="text">
+                    <h3>Hi, I'm</h3>
+                    <h1>Aryan Jaiswal</h1>
+                    <span>Android App Developer</span>
+                </div>
+                <div class="btn-group">
+                    <a href="assets/resume.pdf" download class="btn">Download CV</a>
+                    <div class="btn">Contact</div>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/DebugWithAryan" target="_blank">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/aryanjaiswal1" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://instagram.com/aryan._eee" target="_blank">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <h2 class="section-title">Education</h2>
+        <div class="education-info">
+
+            <div class="grid">
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-school"></i>
+                    <span>School (10+2)</span> 
+                    <h3>2020-2022</h3>
+                    <p>St. Xavier's Senior Secondary School</p>
+                </div>
+
+                <div class="grid-card">
+                    <i class="fa-solid fa-school"></i>
+                    <span>B.Tech in Computer Science</span> 
+                    <h3>2023-2027</h3>
+                    <p>Jaypee University of Engineering & Technology</p>
+                    <p>Current Semester : 4</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <div class="certifications-grid">
+            <div class="grid-card certification-card">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Python for Beginners</span>
+                <h3>Microsoft</h3>
+                <p>Completed on 21st Oct, 2024</p>
+                <div class="cert-actions">
+                    <button class="btn cert-btn" onclick="window.open('assets/microsoft.pdf', '_blank')">
+                        <i class="fa-solid fa-eye"></i> View
+                    </button>
+                </div>
+            </div>
+    
+            <div class="grid-card certification-card">
+                <i class="fa-solid fa-certificate"></i>
+                <span>Software Engineering Job Simulation</span>
+                <h3>Walmart(Forage)</h3>
+                <p>Completed on 25th Oct, 2024</p>
+                <div class="cert-actions">
+                    <button class="btn cert-btn" onclick="window.open('assets/walmart.pdf', '_blank')">
+                        <i class="fa-solid fa-eye"></i> View
+                    </button>
+                </div>
+            </div>
+
+            <div class="grid-card certification-card">
+                <i class="fa-solid fa-certificate"></i>
+                <span>ISF App Development</span>
+                <h3>Jaypee University of Engineering & Technology</h3>
+                <p>Completed on 3rd Dec, 2024</p>
+                <div class="cert-actions">
+                    <button class="btn cert-btn" onclick="window.open('assets/isf.pdf', '_blank')">
+                        <i class="fa-solid fa-eye"></i> View
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Recent Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/images/Arduino.png" alt="">
+                <h3>Proximity Sensor Alarm System</h3>
+                <p>An IoT-based alarm system using an arduino and a proximity sensor</p>
+                <h4>Technologies Used : Arduino, HTML, CSS, JS</h4>
+                <div class="btn-group">
+                    <a href="https://github.com/DebugWithAryan/Proximity-Alarm-Sensor" target="_blank" class="btn">Github Repo</a>
+                </div>
+                <div class="btn-group">
+            </div>
+        </div>
+            <div class="project-card">
+                <img src="assets/images/ISF.png" alt="">
+                <h3>IETE STUDENT FORUM APP</h3>
+                <p>An IETE student forum app, college club app.</p>
+                <h4>Technologies Used : Kotlin, Firebase, Jetpack Compose</h4>
+                <div class="btn-group">
+                    <a href="assets/videos/ISF.mp4" target="_blank" class="btn">Live Demo</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/newsworld.png" alt="">
+                <h3>News World App</h3>
+                <p>This is a news app using an api</p>
+                <h4>Technologies Used : Kotlin, Firebase, Jetpack Compose, Retrofit, newsapi.org</h4>
+                <div class="btn-group">
+                    <a href="assets/videos/NewsWorld.mp4" target="_blank" class="btn">Live Demo</a>
+                    <a href="https://github.com/DebugWithAryan/NewsWorld" target="_blank" class="btn">Github Repo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p>aryanjaiswal123123@gmail.com</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div class="contact-details">
+                        <h3>Phone</h3>
+                        <p>+91 7267067176</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact-details">
+                        <h3>Location</h3>
+                        <p>Bhopal, Madhya Pradesh</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <form id="contactForm" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <div class="input-field">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name</label>
+                            <i class="fa-solid fa-user"></i>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <div class="input-field">
+                            <input type="email" id="email" required>
+                            <label for="email">Your Email</label>
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <div class="input-field">
+                            <input type="text" id="subject" required>
+                            <label for="subject">Subject</label>
+                            <i class="fa-solid fa-message"></i>
+                        </div>
+                    </div>
+    
+                    <div class="form-group">
+                        <div class="input-field">
+                            <textarea id="message" required></textarea>
+                            <label for="message">Your Message</label>
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+                    </div>
+    
+                    <button type="submit" class="submit-btn">
+                        Send Message
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <p>Copyright &copy; 2025 All rights reserved by Aryan Jaiswal</p>
+    </footer>
+    <script src= "script.js"></script>
+</body>
+</html>
